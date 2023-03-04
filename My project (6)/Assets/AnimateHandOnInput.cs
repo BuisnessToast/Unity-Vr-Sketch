@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.InputSystem;
 
 public class AnimateHandOnInput : MonoBehaviour
@@ -9,6 +10,11 @@ public class AnimateHandOnInput : MonoBehaviour
     public InputActionProperty gripAnimationAction;
     public Animator handAnimator;
 
+=======
+
+public class AnimateHandOnInput : MonoBehaviour
+{
+>>>>>>> 18df733fa599eb9c66a68c2ff2b74331525dafd1
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +24,14 @@ public class AnimateHandOnInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         float triggerValue = pinchAnimationAction.action.ReadValue<float>();   
         handAnimator.SetFloat("Trigger" , triggerValue);
         
         float gripValue = gripAnimationAction.action.ReadValue<float>();
         handAnimator.SetFloat("Grip",gripValue);
+=======
+        
+>>>>>>> 18df733fa599eb9c66a68c2ff2b74331525dafd1
     }
 }
